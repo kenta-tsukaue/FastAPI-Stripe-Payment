@@ -5,7 +5,7 @@ from sqlalchemy.orm import (sessionmaker, relationship, scoped_session)
 sys.dont_write_bytecode = True
 
 #setting db connection
-url = "mysql+pymysql://root:Kenter123&#@localhost:3306/fastapi?charset=utf8"
+url = "mysql+pymysql://root:password@localhost:3306/fastapi?charset=utf8"
 engine = create_engine(url, echo=False, pool_recycle=10)
 
 #create session
